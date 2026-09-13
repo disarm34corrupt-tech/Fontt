@@ -1,148 +1,168 @@
+/* =====================================================
+   DECORATE MY TEXT
+   VERSION 2
+===================================================== */
+
+
+/* =====================================================
+   SYMBOL LIBRARY
+===================================================== */
+
 const SYMBOLS = [
 
-  // HEART
-  ["♡","heart"],
-  ["♥","heart"],
-  ["♥︎","heart"],
-  ["❤","heart"],
-  ["ღ","heart"],
-  ["ෆ","heart"],
-  ["❥","heart"],
-  ["❣","heart"],
-  ["𓆩♡𓆪","heart"],
-  ["♡₊˚","heart"],
+  /* HEART */
+  ["♡", "heart"],
+  ["♥", "heart"],
+  ["♥︎", "heart"],
+  ["❤", "heart"],
+  ["ღ", "heart"],
+  ["ෆ", "heart"],
+  ["❥", "heart"],
+  ["❣", "heart"],
+  ["𓆩♡𓆪", "heart"],
+  ["♡₊˚", "heart"],
+  ["♡⃝", "heart"],
 
-  // CUTE
-  ["୨୧","cute"],
-  ["𐙚","cute"],
-  ["꒰ა","cute"],
-  ["໒꒱","cute"],
-  ["૮₍˶ᵔ ᵕ ᵔ˶₎ა","kaomoji"],
-  ["૮꒰ ˶• ༝ •˶꒱ა","kaomoji"],
+  /* CUTE */
+  ["୨୧", "cute"],
+  ["𐙚", "cute"],
+  ["꒰ა", "cute"],
+  ["໒꒱", "cute"],
+  ["ʚɞ", "cute"],
+  ["૮₍˶ᵔ ᵕ ᵔ˶₎ა", "cute"],
+  ["૮꒰ ˶• ༝ •˶꒱ა", "cute"],
 
-  // STARS
-  ["☆","star"],
-  ["★","star"],
-  ["✦","star"],
-  ["✧","star"],
-  ["✩","star"],
-  ["✪","star"],
-  ["✫","star"],
-  ["✬","star"],
-  ["⋆","star"],
-  ["⟡","star"],
+  /* STAR */
+  ["☆", "star"],
+  ["★", "star"],
+  ["✦", "star"],
+  ["✧", "star"],
+  ["✩", "star"],
+  ["✪", "star"],
+  ["✫", "star"],
+  ["✬", "star"],
+  ["✭", "star"],
+  ["⋆", "star"],
+  ["⟡", "star"],
 
-  // SPARKLE
-  ["˚","sparkle"],
-  ["₊","sparkle"],
-  ["‧","sparkle"],
-  ["⊹","sparkle"],
-  ["❋","sparkle"],
-  ["❈","sparkle"],
-  ["⋆｡°✩","sparkle"],
+  /* SPARKLE */
+  ["˚", "sparkle"],
+  ["₊", "sparkle"],
+  ["‧", "sparkle"],
+  ["⊹", "sparkle"],
+  ["❋", "sparkle"],
+  ["❈", "sparkle"],
+  ["✧", "sparkle"],
+  ["⋆｡°✩", "sparkle"],
+  ["˚₊‧", "sparkle"],
+  ["₊˚⊹", "sparkle"],
 
-  // FLOWER
-  ["❀","flower"],
-  ["✿","flower"],
-  ["❁","flower"],
-  ["ꕤ","flower"],
-  ["⚘","flower"],
-  ["𖧷","flower"],
-  ["❃","flower"],
+  /* FLOWER */
+  ["❀", "flower"],
+  ["✿", "flower"],
+  ["❁", "flower"],
+  ["ꕤ", "flower"],
+  ["⚘", "flower"],
+  ["𖧷", "flower"],
+  ["❃", "flower"],
+  ["❊", "flower"],
 
-  // MOON / SKY
-  ["☾","moon"],
-  ["☽","moon"],
-  ["☼","sky"],
-  ["☀︎","sky"],
-  ["☁︎","sky"],
-  ["☄︎","sky"],
+  /* SKY */
+  ["☾", "moon"],
+  ["☽", "moon"],
+  ["☼", "sky"],
+  ["☀︎", "sky"],
+  ["☁︎", "sky"],
+  ["☄︎", "sky"],
+  ["☁️", "sky"],
 
-  // MUSIC
-  ["♫","music"],
-  ["♪","music"],
-  ["♬","music"],
-  ["♩","music"],
-  ["♭","music"],
-  ["𝄞","music"],
+  /* MUSIC */
+  ["♫", "music"],
+  ["♪", "music"],
+  ["♬", "music"],
+  ["♩", "music"],
+  ["♭", "music"],
+  ["𝄞", "music"],
 
-  // ARROWS
-  ["→","arrow"],
-  ["←","arrow"],
-  ["↗","arrow"],
-  ["↘","arrow"],
-  ["➜","arrow"],
-  ["➳","arrow"],
-  ["⟶","arrow"],
+  /* ARROWS */
+  ["→", "arrow"],
+  ["←", "arrow"],
+  ["↗", "arrow"],
+  ["↘", "arrow"],
+  ["➜", "arrow"],
+  ["➳", "arrow"],
+  ["⟶", "arrow"],
 
-  // SHAPES
-  ["∞","shape"],
-  ["◇","shape"],
-  ["◆","shape"],
-  ["○","shape"],
-  ["●","shape"],
-  ["△","shape"],
-  ["▽","shape"],
-  ["□","shape"],
-  ["■","shape"],
+  /* SHAPES */
+  ["∞", "shape"],
+  ["◇", "shape"],
+  ["◆", "shape"],
+  ["○", "shape"],
+  ["●", "shape"],
+  ["△", "shape"],
+  ["▽", "shape"],
+  ["□", "shape"],
+  ["■", "shape"],
 
-  // SYMBOLS
-  ["☻","symbol"],
-  ["☹","symbol"],
-  ["☯","symbol"],
-  ["☮","symbol"],
-  ["☞","symbol"],
-  ["☜","symbol"],
+  /* DECORATIVE */
+  ["⚜", "decorative"],
+  ["❦", "decorative"],
+  ["❧", "decorative"],
+  ["꧁", "decorative"],
+  ["꧂", "decorative"],
+  ["༺", "decorative"],
+  ["༻", "decorative"],
+  ["ᶻ 𝗓 𐰁", "decorative"],
 
-  // DECORATIVE
-  ["⚜","decorative"],
-  ["❦","decorative"],
-  ["❧","decorative"],
-  ["꧁","decorative"],
-  ["꧂","decorative"],
-  ["༺","decorative"],
-  ["༻","decorative"],
+  /* ANCIENT */
+  ["𓂀", "ancient"],
+  ["𓆩", "ancient"],
+  ["𓆪", "ancient"],
+  ["𓂃", "ancient"],
+  ["𓇼", "ancient"],
 
-  // BRACKETS
-  ["「","bracket"],
-  ["」","bracket"],
-  ["『","bracket"],
-  ["』","bracket"],
-  ["【","bracket"],
-  ["】","bracket"],
+  /* EMOJI */
+  ["☕", "emoji"],
+  ["🍰", "emoji"],
+  ["🧁", "emoji"],
+  ["🍓", "emoji"],
+  ["🎀", "emoji"],
+  ["🧸", "emoji"],
+  ["🥹", "emoji"],
+  ["😭", "emoji"],
+  ["✨", "emoji"],
+  ["💗", "emoji"],
+  ["💌", "emoji"],
+  ["🌷", "emoji"],
+  ["☁️", "emoji"],
+  ["🌙", "emoji"],
+  ["🎂", "emoji"],
+  ["🎉", "emoji"],
+  ["🎁", "emoji"],
+  ["📸", "emoji"],
+  ["🎧", "emoji"],
+  ["🌸", "emoji"],
+  ["🍒", "emoji"],
+  ["🍪", "emoji"],
+  ["🫶🏻", "emoji"],
+  ["🪽", "emoji"],
 
-  // ANCIENT
-  ["𓂀","ancient"],
-  ["𓆩","ancient"],
-  ["𓆪","ancient"],
-  ["𓂃","ancient"],
-  ["𓇼","ancient"],
+  /* KAOMOJI */
+  ["(˶ᵔ ᵕ ᵔ˶)", "kaomoji"],
+  ["(˶˃ ᵕ ˂˶)", "kaomoji"],
+  ["(╥﹏╥)", "kaomoji"],
+  ["(｡•́‿•̀｡)", "kaomoji"],
+  ["(≧▽≦)", "kaomoji"],
+  ["(˵ •̀ ᴗ - ˵ ) ✧", "kaomoji"]
 
-  // EMOJI
-  ["☕","emoji"],
-  ["🍰","emoji"],
-  ["🧁","emoji"],
-  ["🍓","emoji"],
-  ["🎀","emoji"],
-  ["🧸","emoji"],
-  ["🥹","emoji"],
-  ["😭","emoji"],
-  ["✨","emoji"],
-  ["💗","emoji"],
-  ["🌷","emoji"],
-  ["☁️","emoji"],
-  ["🌙","emoji"],
-
-  // KAOMOJI
-  ["(˶ᵔ ᵕ ᵔ˶)","kaomoji"],
-  ["(˶˃ ᵕ ˂˶)","kaomoji"],
-  ["(╥﹏╥)","kaomoji"],
-  ["(｡•́‿•̀｡)","kaomoji"],
-  ["(≧▽≦)","kaomoji"]
 ];
 
 
-const VIBE_PATTERNS = {
+/* =====================================================
+   VIBE CONFIG
+===================================================== */
+
+const VIBES = {
 
   cute: [
 
@@ -150,11 +170,13 @@ const VIBE_PATTERNS = {
       `${text} ${pick([
         "♡₊˚",
         "୨୧",
-        "𐙚"
+        "𐙚",
+        "ෆ"
       ])} ${pick([
         "🎀",
         "🧸",
-        "🍓"
+        "🍓",
+        "🪽"
       ])}`,
 
     text =>
@@ -165,10 +187,7 @@ const VIBE_PATTERNS = {
       ])}`,
 
     text =>
-      `${pick([
-        "꒰ა",
-        "𐙚"
-      ])} ${text} ${pick([
+      `꒰ა ${text} ${pick([
         "໒꒱",
         "୨୧"
       ])}`
@@ -316,25 +335,264 @@ const VIBE_PATTERNS = {
 };
 
 
+/* =====================================================
+   CONTEXT DETECTOR
+===================================================== */
+
+const CONTEXTS = {
+
+  birthday: {
+    words: [
+      "birthday",
+      "bday",
+      "born",
+      "birth"
+    ],
+
+    decorations: [
+      "🎂",
+      "🎀",
+      "🎁",
+      "🎉",
+      "♡",
+      "୨୧",
+      "✨"
+    ]
+  },
+
+
+  love: {
+    words: [
+      "love",
+      "lover",
+      "loving",
+      "boyfriend",
+      "girlfriend",
+      "husband",
+      "wife",
+      "favorite person",
+      "my person"
+    ],
+
+    decorations: [
+      "♡",
+      "𐙚",
+      "୨୧",
+      "ෆ",
+      "💗",
+      "❦",
+      "𓆩♡𓆪"
+    ]
+  },
+
+
+  miss: {
+    words: [
+      "miss",
+      "missing",
+      "miss you",
+      "i miss",
+      "wish you were"
+    ],
+
+    decorations: [
+      "☾",
+      "♡",
+      "🥹",
+      "𐙚",
+      "☁︎",
+      "⋆｡°✩",
+      "ෆ"
+    ]
+  },
+
+
+  birthday: {
+    words: [
+      "birthday",
+      "bday",
+      "born"
+    ],
+
+    decorations: [
+      "🎂",
+      "🎀",
+      "🎁",
+      "🎉",
+      "✨",
+      "♡"
+    ]
+  },
+
+
+  coffee: {
+    words: [
+      "coffee",
+      "cafe",
+      "café",
+      "latte",
+      "espresso",
+      "matcha",
+      "tea"
+    ],
+
+    decorations: [
+      "☕",
+      "🍰",
+      "☁︎",
+      "⋆",
+      "♡",
+      "🍓"
+    ]
+  },
+
+
+  sunday: {
+    words: [
+      "sunday",
+      "weekend",
+      "slow morning",
+      "lazy day"
+    ],
+
+    decorations: [
+      "☁︎",
+      "☕",
+      "☀︎",
+      "˚₊‧",
+      "⋆｡°✩",
+      "🌷"
+    ]
+  },
+
+
+  concert: {
+    words: [
+      "concert",
+      "stage",
+      "idol",
+      "fanmeeting",
+      "festival",
+      "show",
+      "performance"
+    ],
+
+    decorations: [
+      "🎧",
+      "♫",
+      "✦",
+      "✨",
+      "🎀",
+      "😭",
+      "🫶🏻"
+    ]
+  },
+
+
+  sad: {
+    words: [
+      "sad",
+      "cry",
+      "crying",
+      "hurt",
+      "broken",
+      "lonely",
+      "alone",
+      "pain",
+      "tears"
+    ],
+
+    decorations: [
+      "☾",
+      "☁︎",
+      "🥹",
+      "😭",
+      "♡",
+      "⋆｡°✩"
+    ]
+  },
+
+
+  happy: {
+    words: [
+      "happy",
+      "happiest",
+      "excited",
+      "yay",
+      "finally",
+      "fun",
+      "amazing"
+    ],
+
+    decorations: [
+      "♡",
+      "✦",
+      "✨",
+      "🎀",
+      "🫶🏻",
+      "🌷"
+    ]
+  },
+
+
+  food: {
+    words: [
+      "food",
+      "eat",
+      "eating",
+      "dinner",
+      "lunch",
+      "breakfast",
+      "dessert",
+      "cake",
+      "cookie"
+    ],
+
+    decorations: [
+      "🍰",
+      "🧁",
+      "🍓",
+      "🍪",
+      "☕",
+      "♡"
+    ]
+  },
+
+
+  music: {
+    words: [
+      "song",
+      "music",
+      "playlist",
+      "listen",
+      "lyrics",
+      "album"
+    ],
+
+    decorations: [
+      "♫",
+      "♪",
+      "♬",
+      "☾",
+      "✦",
+      "⋆"
+    ]
+  }
+
+};
+
+
+/* =====================================================
+   STATE
+===================================================== */
+
 let currentVibe = "cute";
 let currentCategory = "all";
 
 
-const textInput =
-  document.querySelector("#textInput");
-
-const results =
-  document.querySelector("#results");
-
-const searchInput =
-  document.querySelector("#searchInput");
-
-const library =
-  document.querySelector("#library");
-
-const categories =
-  document.querySelector("#categories");
-
+/* =====================================================
+   HELPERS
+===================================================== */
 
 function pick(array) {
 
@@ -356,107 +614,404 @@ function clean(text) {
 }
 
 
-function decorate(text, vibe) {
+/* =====================================================
+   DETECT CONTEXT
+===================================================== */
 
-  if (vibe === "random") {
+function detectContexts(text) {
 
-    vibe = pick(
-      Object.keys(VIBE_PATTERNS)
-    );
+  const lower =
+    text.toLowerCase();
 
-  }
-
-  return pick(
-    VIBE_PATTERNS[vibe]
-  )(text);
-
-}
+  const matches = [];
 
 
-function generate() {
+  for (
+    const [name, data]
+    of Object.entries(CONTEXTS)
+  ) {
 
-  const text =
-    clean(textInput.value);
-
-
-  if (!text) {
-
-    results.innerHTML = `
-      <p class="empty">
-        Write something first yaa ♡
-      </p>
-    `;
-
-    return;
-  }
+    const found =
+      data.words.some(
+        word =>
+          lower.includes(
+            word.toLowerCase()
+          )
+      );
 
 
-  const output = [];
+    if (found) {
 
-
-  while (output.length < 6) {
-
-    const result =
-      decorate(text, currentVibe);
-
-
-    if (!output.includes(result)) {
-
-      output.push(result);
+      matches.push(name);
 
     }
 
   }
 
 
-  results.innerHTML =
-    output.map((text, index) => `
+  return matches;
 
-      <article class="result">
+}
 
-        <div class="result-text">
-          ${escapeHTML(text)}
-        </div>
 
-        <div class="result-footer">
+/* =====================================================
+   GET CONTEXT DECORATIONS
+===================================================== */
 
-          <span class="result-tag">
-            ${currentVibe.toUpperCase()} · ${index + 1}
-          </span>
+function getContextDecorations(
+  text
+) {
 
-          <button class="copy-btn">
-            Copy ♡
-          </button>
+  const contexts =
+    detectContexts(text);
 
-        </div>
 
-      </article>
+  let decorations = [];
 
-    `).join("");
 
+  contexts.forEach(context => {
+
+    decorations.push(
+      ...CONTEXTS[
+        context
+      ].decorations
+    );
+
+  });
+
+
+  return decorations;
+
+}
+
+
+/* =====================================================
+   SMART DECORATION
+===================================================== */
+
+function smartDecorate(
+  text,
+  vibe
+) {
+
+  const contexts =
+    detectContexts(text);
+
+
+  const decorations =
+    getContextDecorations(text);
+
+
+  /*
+    RANDOM VIBE
+  */
+
+  if (vibe === "random") {
+
+    const available =
+      Object.keys(VIBES);
+
+    vibe =
+      pick(available);
+
+  }
+
+
+  /*
+    Kalau ada konteks,
+    kasih sedikit prioritas
+    ke dekorasi yang relevan.
+  */
+
+  if (
+    contexts.length > 0 &&
+    Math.random() < 0.65
+  ) {
+
+    const d1 =
+      pick(decorations);
+
+    const d2 =
+      pick(decorations);
+
+
+    const styles = [
+
+      `${d1} ${text} ${d2}`,
+
+      `${text} ${d1} ${d2}`,
+
+      `${d1} ${text} ♡`,
+
+      `${text} ${d1} ${pick([
+        "˚₊‧",
+        "✦",
+        "୨୧",
+        "⋆｡°✩"
+      ])}`
+
+    ];
+
+
+    return pick(styles);
+
+  }
+
+
+  /*
+    DEFAULT VIBE
+  */
+
+  return pick(
+    VIBES[vibe]
+  )(text);
+
+}
+
+
+/* =====================================================
+   GENERATE
+===================================================== */
+
+function generate() {
+
+  const input =
+    document.querySelector(
+      "#textInput"
+    );
+
+  const output =
+    document.querySelector(
+      "#results"
+    );
+
+
+  if (!input || !output) {
+
+    console.error(
+      "Required HTML element missing."
+    );
+
+    return;
+
+  }
+
+
+  const text =
+    clean(input.value);
+
+
+  if (!text) {
+
+    output.innerHTML = `
+      <p class="empty">
+        Write something first yaa ♡
+      </p>
+    `;
+
+    return;
+
+  }
+
+
+  const generated = [];
+
+
+  let safety = 0;
+
+
+  while (
+    generated.length < 6 &&
+    safety < 100
+  ) {
+
+    const result =
+      smartDecorate(
+        text,
+        currentVibe
+      );
+
+
+    if (
+      !generated.includes(
+        result
+      )
+    ) {
+
+      generated.push(result);
+
+    }
+
+
+    safety++;
+
+  }
+
+
+  output.innerHTML =
+    generated.map(
+      (text, index) => `
+
+        <article class="result">
+
+          <div class="result-text">
+            ${escapeHTML(text)}
+          </div>
+
+          <div class="result-footer">
+
+            <span class="result-tag">
+              ${currentVibe.toUpperCase()}
+              · ${index + 1}
+            </span>
+
+            <button class="copy-btn">
+              Copy ♡
+            </button>
+
+          </div>
+
+        </article>
+
+      `
+    ).join("");
+
+
+  setupCopyButtons();
+
+}
+
+
+/* =====================================================
+   COPY
+===================================================== */
+
+async function copyToClipboard(
+  text
+) {
+
+  try {
+
+    if (
+      navigator.clipboard &&
+      window.isSecureContext
+    ) {
+
+      await navigator.clipboard
+        .writeText(text);
+
+      return true;
+
+    }
+
+  }
+
+  catch (error) {
+
+    console.log(
+      "Clipboard API failed."
+    );
+
+  }
+
+
+  try {
+
+    const textarea =
+      document.createElement(
+        "textarea"
+      );
+
+
+    textarea.value = text;
+
+
+    textarea.style.position =
+      "fixed";
+
+    textarea.style.left =
+      "-9999px";
+
+
+    document.body.appendChild(
+      textarea
+    );
+
+
+    textarea.focus();
+
+    textarea.select();
+
+
+    const success =
+      document.execCommand(
+        "copy"
+      );
+
+
+    document.body.removeChild(
+      textarea
+    );
+
+
+    return success;
+
+  }
+
+  catch (error) {
+
+    console.error(
+      "Copy failed:",
+      error
+    );
+
+    return false;
+
+  }
+
+}
+
+
+function setupCopyButtons() {
 
   document
-    .querySelectorAll(".copy-btn")
+    .querySelectorAll(
+      ".copy-btn"
+    )
     .forEach(button => {
 
       button.addEventListener(
         "click",
         async () => {
 
-          const value =
+          const text =
             button
               .closest(".result")
-              .querySelector(".result-text")
+              .querySelector(
+                ".result-text"
+              )
               .textContent;
 
 
-          await navigator
-            .clipboard
-            .writeText(value);
+          const success =
+            await copyToClipboard(
+              text
+            );
 
 
-          button.textContent =
-            "Copied! ♡";
+          if (success) {
+
+            button.textContent =
+              "✓ Copied!";
+
+          }
+
+          else {
+
+            button.textContent =
+              "Copy failed";
+
+          }
 
 
           setTimeout(() => {
@@ -464,7 +1019,7 @@ function generate() {
             button.textContent =
               "Copy ♡";
 
-          }, 900);
+          }, 1100);
 
         }
       );
@@ -474,10 +1029,15 @@ function generate() {
 }
 
 
-function escapeHTML(value) {
+/* =====================================================
+   ESCAPE HTML
+===================================================== */
 
-  return value.replace(
+function escapeHTML(text) {
+
+  return text.replace(
     /[&<>"']/g,
+
     char => ({
 
       "&": "&amp;",
@@ -487,14 +1047,131 @@ function escapeHTML(value) {
       "'": "&#39;"
 
     }[char])
+
   );
 
 }
 
 
-/* -----------------------------
-   SYMBOL LIBRARY
------------------------------ */
+/* =====================================================
+   VIBE BUTTONS
+===================================================== */
+
+document
+  .querySelectorAll(
+    ".vibe"
+  )
+  .forEach(button => {
+
+    button.addEventListener(
+      "click",
+      () => {
+
+        document
+          .querySelectorAll(
+            ".vibe"
+          )
+          .forEach(item =>
+            item.classList.remove(
+              "active"
+            )
+          );
+
+
+        button.classList.add(
+          "active"
+        );
+
+
+        currentVibe =
+          button.dataset.vibe;
+
+      }
+    );
+
+  });
+
+
+/* =====================================================
+   GENERATE BUTTON
+===================================================== */
+
+document
+  .querySelector(
+    "#generateBtn"
+  )
+  .addEventListener(
+    "click",
+    generate
+  );
+
+
+/* =====================================================
+   SURPRISE BUTTON
+===================================================== */
+
+document
+  .querySelector(
+    "#surpriseBtn"
+  )
+  .addEventListener(
+    "click",
+    () => {
+
+      const vibes =
+        [
+          ...document
+            .querySelectorAll(
+              ".vibe"
+            )
+        ];
+
+
+      pick(vibes).click();
+
+      generate();
+
+    }
+  );
+
+
+/* =====================================================
+   CLEAR
+===================================================== */
+
+document
+  .querySelector(
+    "#clearBtn"
+  )
+  .addEventListener(
+    "click",
+    () => {
+
+      document
+        .querySelector(
+          "#textInput"
+        )
+        .value = "";
+
+
+      document
+        .querySelector(
+          "#results"
+        )
+        .innerHTML = `
+          <p class="empty">
+            Your decorated sentences
+            will appear here ♡
+          </p>
+        `;
+
+    }
+  );
+
+
+/* =====================================================
+   CATEGORY
+===================================================== */
 
 const categoryList = [
 
@@ -514,261 +1191,221 @@ const categoryList = [
 ];
 
 
-categories.innerHTML =
-  categoryList.map(category => `
-
-    <button
-      class="category ${
-        category === "all"
-          ? "active"
-          : ""
-      }"
-      data-category="${category}"
-    >
-      ${category}
-    </button>
-
-  `).join("");
+const categories =
+  document.querySelector(
+    "#categories"
+  );
 
 
-function renderLibrary() {
-
-  const query =
-    searchInput.value.toLowerCase();
-
-
-  const filtered =
-    SYMBOLS.filter(
-      ([symbol, category]) => {
-
-        const categoryMatch =
-          currentCategory === "all" ||
-          category === currentCategory;
+const library =
+  document.querySelector(
+    "#library"
+  );
 
 
-        const searchMatch =
-          `${symbol} ${category}`
-            .toLowerCase()
-            .includes(query);
+const searchInput =
+  document.querySelector(
+    "#searchInput"
+  );
 
 
-        return (
-          categoryMatch &&
-          searchMatch
-        );
-
-      }
-    );
+if (
+  categories &&
+  library &&
+  searchInput
+) {
 
 
-  library.innerHTML =
-    filtered.map(
-      ([symbol, category]) => `
+  categories.innerHTML =
+    categoryList
+      .map(category => `
 
         <button
-          class="symbol"
-          title="Copy ${escapeHTML(symbol)}"
+          class="category ${
+            category === "all"
+              ? "active"
+              : ""
+          }"
+          data-category="${category}"
         >
-
-          ${escapeHTML(symbol)}
-
-          <small>
-            ${category}
-          </small>
-
+          ${category}
         </button>
 
-      `
-    ).join("");
+      `)
+      .join("");
 
 
-  library
-    .querySelectorAll(".symbol")
+  function renderLibrary() {
+
+    const search =
+      searchInput.value
+        .toLowerCase();
+
+
+    const filtered =
+      SYMBOLS.filter(
+        ([symbol, category]) => {
+
+          const matchCategory =
+            currentCategory === "all" ||
+            category === currentCategory;
+
+
+          const matchSearch =
+            `${symbol} ${category}`
+              .toLowerCase()
+              .includes(search);
+
+
+          return (
+            matchCategory &&
+            matchSearch
+          );
+
+        }
+      );
+
+
+    library.innerHTML =
+      filtered
+        .map(
+          ([symbol, category]) => `
+
+            <button
+              class="symbol"
+              data-symbol="${escapeHTML(symbol)}"
+            >
+
+              ${escapeHTML(symbol)}
+
+              <small>
+                ${category}
+              </small>
+
+            </button>
+
+          `
+        )
+        .join("");
+
+
+    library
+      .querySelectorAll(
+        ".symbol"
+      )
+      .forEach(button => {
+
+        button.addEventListener(
+          "click",
+          async () => {
+
+            const symbol =
+              button.dataset.symbol;
+
+
+            const success =
+              await copyToClipboard(
+                symbol
+              );
+
+
+            if (success) {
+
+              const old =
+                button.innerHTML;
+
+
+              button.innerHTML =
+                `✓<small>Copied</small>`;
+
+
+              setTimeout(() => {
+
+                button.innerHTML =
+                  old;
+
+              }, 800);
+
+            }
+
+          }
+        );
+
+      });
+
+  }
+
+
+  categories
+    .querySelectorAll(
+      ".category"
+    )
     .forEach(button => {
 
       button.addEventListener(
         "click",
-        async () => {
+        () => {
 
-          const symbol =
-            button
-              .childNodes[0]
-              .textContent
-              .trim();
-
-
-          await navigator
-            .clipboard
-            .writeText(symbol);
-
-
-          const old =
-            button.innerHTML;
+          categories
+            .querySelectorAll(
+              ".category"
+            )
+            .forEach(item =>
+              item.classList.remove(
+                "active"
+              )
+            );
 
 
-          button.innerHTML =
-            "Copied!<small>♡</small>";
+          button.classList.add(
+            "active"
+          );
 
 
-          setTimeout(() => {
+          currentCategory =
+            button.dataset.category;
 
-            button.innerHTML =
-              old;
 
-          }, 800);
+          renderLibrary();
 
         }
       );
 
     });
 
+
+  searchInput.addEventListener(
+    "input",
+    renderLibrary
+  );
+
+
+  renderLibrary();
+
 }
 
 
-/* -----------------------------
-   VIBE BUTTONS
------------------------------ */
+/* =====================================================
+   KEYBOARD SHORTCUT
+===================================================== */
 
 document
-  .querySelectorAll(".vibe")
-  .forEach(button => {
+  .querySelector(
+    "#textInput"
+  )
+  .addEventListener(
+    "keydown",
+    event => {
 
-    button.addEventListener(
-      "click",
-      () => {
+      if (
+        (event.ctrlKey ||
+         event.metaKey) &&
+        event.key === "Enter"
+      ) {
 
-        document
-          .querySelectorAll(".vibe")
-          .forEach(item =>
-            item.classList.remove(
-              "active"
-            )
-          );
-
-
-        button.classList.add("active");
-
-        currentVibe =
-          button.dataset.vibe;
+        generate();
 
       }
-    );
-
-  });
-
-
-/* -----------------------------
-   CATEGORY BUTTONS
------------------------------ */
-
-document
-  .querySelectorAll(".category")
-  .forEach(button => {
-
-    button.addEventListener(
-      "click",
-      () => {
-
-        document
-          .querySelectorAll(".category")
-          .forEach(item =>
-            item.classList.remove(
-              "active"
-            )
-          );
-
-
-        button.classList.add("active");
-
-
-        currentCategory =
-          button.dataset.category;
-
-
-        renderLibrary();
-
-      }
-    );
-
-  });
-
-
-/* -----------------------------
-   MAIN BUTTONS
------------------------------ */
-
-document
-  .querySelector("#generateBtn")
-  .addEventListener(
-    "click",
-    generate
-  );
-
-
-document
-  .querySelector("#surpriseBtn")
-  .addEventListener(
-    "click",
-    () => {
-
-      const vibes =
-        [
-          ...document
-            .querySelectorAll(".vibe")
-        ];
-
-
-      pick(vibes).click();
-
-      generate();
 
     }
   );
-
-
-document
-  .querySelector("#clearBtn")
-  .addEventListener(
-    "click",
-    () => {
-
-      textInput.value = "";
-
-      results.innerHTML = `
-        <p class="empty">
-          Your decorated sentences
-          will appear here ♡
-        </p>
-      `;
-
-    }
-  );
-
-
-searchInput.addEventListener(
-  "input",
-  renderLibrary
-);
-
-
-/* Ctrl/Cmd + Enter */
-
-textInput.addEventListener(
-  "keydown",
-  event => {
-
-    if (
-      (event.ctrlKey ||
-       event.metaKey) &&
-      event.key === "Enter"
-    ) {
-
-      generate();
-
-    }
-
-  }
-);
-
-
-renderLibrary();
