@@ -1,0 +1,399 @@
+:root {
+  --bg: #fff8fc;
+  --card: #ffffff;
+  --text: #413842;
+  --muted: #9a8e98;
+  --line: #eee2ea;
+  --accent: #e5a8c5;
+  --accent-light: #f9dfeb;
+  --shadow: 0 14px 35px rgba(103, 69, 91, .09);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 10% 5%,
+      #ffeaf4 0,
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 20%,
+      #eee8ff 0,
+      transparent 23%
+    ),
+    linear-gradient(
+      180deg,
+      #fff8fc,
+      #fff 55%,
+      #faf7ff
+    );
+
+  color: var(--text);
+
+  font-family:
+    "Trebuchet MS",
+    system-ui,
+    sans-serif;
+}
+
+button,
+textarea,
+input {
+  font: inherit;
+}
+
+.app {
+  width: min(900px, 100%);
+  margin: auto;
+  padding: 25px 16px 50px;
+}
+
+
+/* HEADER */
+
+.hero {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.logo {
+  font-size: clamp(30px, 7vw, 50px);
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.logo b {
+  color: #dc91b3;
+}
+
+.hero p {
+  color: var(--muted);
+}
+
+
+/* CARD */
+
+.card {
+  background: rgba(255,255,255,.95);
+
+  border: 1px solid var(--line);
+
+  border-radius: 24px;
+
+  padding: 20px;
+
+  margin: 15px 0;
+
+  box-shadow: var(--shadow);
+}
+
+
+/* LABEL */
+
+label,
+.section-title {
+  display: block;
+
+  color: var(--muted);
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: .13em;
+
+  margin-bottom: 10px;
+}
+
+.section-title {
+  margin-top: 18px;
+}
+
+
+/* TEXTAREA */
+
+textarea {
+  width: 100%;
+
+  min-height: 140px;
+
+  resize: vertical;
+
+  border: 1px solid var(--line);
+
+  border-radius: 17px;
+
+  padding: 15px;
+
+  background: #fffdfd;
+
+  color: var(--text);
+
+  outline: none;
+}
+
+textarea:focus,
+.search:focus {
+  border-color: var(--accent);
+
+  box-shadow:
+    0 0 0 3px #fceaf3;
+}
+
+
+/* VIBES */
+
+.vibes {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+button {
+  border: 1px solid var(--line);
+
+  border-radius: 999px;
+
+  padding: 9px 13px;
+
+  background: white;
+
+  color: var(--text);
+
+  cursor: pointer;
+
+  transition: .15s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+
+  border-color: var(--accent);
+}
+
+.vibe.active {
+  background: var(--accent-light);
+
+  border-color: var(--accent);
+}
+
+
+/* ACTIONS */
+
+.actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 18px;
+}
+
+.primary {
+  background: var(--text);
+
+  color: white;
+
+  border-color: var(--text);
+
+  padding-inline: 20px;
+}
+
+
+/* RESULTS */
+
+.results {
+  display: grid;
+
+  gap: 10px;
+}
+
+.empty {
+  color: var(--muted);
+
+  text-align: center;
+
+  padding: 25px 10px;
+}
+
+.result {
+  border: 1px solid var(--line);
+
+  border-radius: 17px;
+
+  padding: 14px;
+
+  background: white;
+}
+
+.result-text {
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  overflow-wrap: anywhere;
+}
+
+.result-footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.result-tag {
+  color: var(--muted);
+
+  font-size: 10px;
+
+  letter-spacing: .08em;
+}
+
+.copy-btn {
+  padding: 7px 11px;
+
+  font-size: 12px;
+}
+
+
+/* SEARCH */
+
+.search {
+  width: 100%;
+
+  border: 1px solid var(--line);
+
+  border-radius: 14px;
+
+  padding: 12px 14px;
+
+  outline: none;
+}
+
+
+/* CATEGORY */
+
+.categories {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin: 12px 0;
+}
+
+.category {
+  font-size: 12px;
+
+  padding: 7px 10px;
+}
+
+.category.active {
+  background: var(--accent-light);
+
+  border-color: var(--accent);
+}
+
+
+/* SYMBOL */
+
+.library {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(85px, 1fr)
+    );
+
+  gap: 7px;
+}
+
+.symbol {
+  min-height: 60px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 22px;
+
+  padding: 5px;
+}
+
+.symbol small {
+  margin-top: 4px;
+
+  color: var(--muted);
+
+  font-size: 8px;
+}
+
+
+/* FOOTER */
+
+.hint,
+footer {
+  color: var(--muted);
+
+  font-size: 11px;
+
+  text-align: center;
+}
+
+footer {
+  padding: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 520px) {
+
+  .app {
+    padding:
+      12px
+      10px
+      35px;
+  }
+
+  .card {
+    border-radius: 20px;
+
+    padding: 14px;
+  }
+
+  .library {
+    grid-template-columns:
+      repeat(5, 1fr);
+  }
+
+  .symbol {
+    font-size: 19px;
+  }
+
+}

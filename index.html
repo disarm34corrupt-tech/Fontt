@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Decorate My Text ✦</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header class="hero">
+      <div class="logo">
+        decorate <span>my</span> text <b>✦</b>
+      </div>
+
+      <p>
+        Write something ordinary. Let's make it prettier ♡
+      </p>
+    </header>
+
+
+    <!-- TEXT INPUT -->
+    <section class="card">
+
+      <label for="textInput">
+        YOUR TEXT
+      </label>
+
+      <textarea
+        id="textInput"
+        placeholder="type your sentence here..."
+      ></textarea>
+
+
+      <!-- VIBES -->
+      <div class="section-title">
+        CHOOSE YOUR VIBE
+      </div>
+
+      <div
+        class="vibes"
+        id="vibes"
+      >
+
+        <button
+          class="vibe active"
+          data-vibe="cute"
+        >
+          ♡ Cute
+        </button>
+
+        <button
+          class="vibe"
+          data-vibe="soft"
+        >
+          ୨୧ Soft
+        </button>
+
+        <button
+          class="vibe"
+          data-vibe="dreamy"
+        >
+          ☾ Dreamy
+        </button>
+
+        <button
+          class="vibe"
+          data-vibe="romantic"
+        >
+          𐙚 Romantic
+        </button>
+
+        <button
+          class="vibe"
+          data-vibe="sparkly"
+        >
+          ✦ Sparkly
+        </button>
+
+        <button
+          class="vibe"
+          data-vibe="sweet"
+        >
+          🍰 Sweet
+        </button>
+
+        <button
+          class="vibe"
+          data-vibe="casual"
+        >
+          ☻ Casual
+        </button>
+
+        <button
+          class="vibe"
+          data-vibe="chaos"
+        >
+          𐙚 Chaos
+        </button>
+
+        <button
+          class="vibe"
+          data-vibe="random"
+        >
+          ✧ Random
+        </button>
+
+      </div>
+
+
+      <!-- ACTIONS -->
+      <div class="actions">
+
+        <button
+          class="primary"
+          id="generateBtn"
+        >
+          ✨ Generate
+        </button>
+
+        <button id="surpriseBtn">
+          ↻ Surprise me
+        </button>
+
+        <button id="clearBtn">
+          Clear
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- GENERATED -->
+    <section class="card">
+
+      <div class="section-title">
+        GENERATED TEXT
+      </div>
+
+      <div
+        id="results"
+        class="results"
+      >
+
+        <p class="empty">
+          Your decorated sentences will appear here ♡
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- SYMBOL LIBRARY -->
+    <section class="card">
+
+      <div class="section-title">
+        SYMBOL LIBRARY
+      </div>
+
+
+      <input
+        id="searchInput"
+        class="search"
+        type="text"
+        placeholder="Search symbols..."
+      >
+
+
+      <div
+        id="categories"
+        class="categories"
+      ></div>
+
+
+      <div
+        id="library"
+        class="library"
+      ></div>
+
+
+      <p class="hint">
+        Click any symbol to copy it ♡
+      </p>
+
+    </section>
+
+
+    <footer>
+      made for little sentences that deserve a little extra ✦
+    </footer>
+
+  </main>
+
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
